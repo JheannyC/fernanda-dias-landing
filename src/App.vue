@@ -357,7 +357,7 @@ function handleTouchEnd(event) {
       </section>
 
       <section id="atendimento" class="location-section relative px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
-        <div class="location-flower" aria-hidden="true">✳</div>
+        <div class="location-decoration" aria-hidden="true"></div>
         <div class="relative mx-auto grid max-w-7xl gap-10 md:grid-cols-[1fr_0.85fr] md:items-start md:gap-8 lg:grid-cols-[1fr_0.85fr]">
           <div class="max-w-2xl reveal">
             <p class="eyebrow mb-5"><span class="eyebrow-line"></span> Onde nos encontramos</p>

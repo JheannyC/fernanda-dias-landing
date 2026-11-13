@@ -393,13 +393,23 @@ button:focus-visible {
   background: #fffaf5;
 }
 
-.location-flower {
+.location-decoration {
   position: absolute;
-  top: -4rem;
-  right: 1%;
-  color: rgb(52 43 131 / 5%);
-  font-size: 25rem;
-  line-height: 1;
+  top: -8rem;
+  right: -8rem;
+  width: 28rem;
+  height: 28rem;
+  pointer-events: none;
+  border: 1px solid rgb(52 43 131 / 5%);
+  border-radius: 50%;
+}
+
+.location-decoration::before {
+  position: absolute;
+  inset: 2.5rem;
+  border: 1px solid rgb(52 43 131 / 5%);
+  border-radius: 50%;
+  content: '';
 }
 
 .address-card {
