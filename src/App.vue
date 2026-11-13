@@ -85,7 +85,7 @@ function handleTouchEnd(event) {
 
 <template>
   <div class="overflow-x-clip">
-    <header class="sticky top-0 z-30 border-b border-ink/10 bg-white/90 backdrop-blur-md">
+    <header class="sticky top-0 z-30 border-b border-ink/10 bg-white">
       <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 sm:px-8 lg:px-12">
         <a class="brand-mark" href="#inicio" aria-label="Fernanda Dias Makeup — início">
           <img class="brand-logo" src="/images/brand-logo.png" alt="" />
