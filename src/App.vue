@@ -181,7 +181,9 @@ function handleTouchEnd(event) {
               />
             </div>
             <div class="hero-note">
-              <span class="hero-note-star" aria-hidden="true">✳</span>
+              <svg class="hero-note-star" aria-hidden="true" viewBox="0 0 24 24" fill="none">
+                <path d="M12 2.5 14.4 9.6 21.5 12l-7.1 2.4L12 21.5l-2.4-7.1L2.5 12l7.1-2.4L12 2.5Z" fill="currentColor" />
+              </svg>
               <p>
                 <span>Quero que você se olhe no espelho</span>
                 <span>e se sinta <strong>ma-ra-vi-lho-sa!</strong></span>
