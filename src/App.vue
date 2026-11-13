@@ -18,7 +18,7 @@ const services = [
   },
   {
     name: 'Maquiagem social',
-    price: 'R$ 129,99',
+    price: 'R$ 130,00',
     image: '/images/social.png',
     imageAlt: 'Maquiagem social com olhos iluminados',
     description:
@@ -27,7 +27,7 @@ const services = [
   },
   {
     name: 'À prova d’água',
-    price: 'R$ 159,99',
+    price: 'R$ 160,00',
     image: '/images/waterproof.png',
     imageAlt: 'Maquiagem resistente à água para longa duração',
     description:
@@ -38,6 +38,8 @@ const services = [
 
 const whatsappUrl =
   'https://wa.me/5583986515567?text=Ol%C3%A1%2C%20Fernanda!%20Quero%20agendar%20uma%20maquiagem.'
+const hairstyleWhatsappUrl =
+  'https://wa.me/5583986515567?text=Ol%C3%A1%2C%20Fernanda!%20Tenho%20interesse%20em%20penteado%20e%20gostaria%20de%20consultar%20a%20disponibilidade%20da%20penteadista.'
 
 onMounted(() => {
   const revealElements = document.querySelectorAll('.reveal')
@@ -114,6 +116,7 @@ function handleTouchEnd(event) {
           aria-label="Navegação principal"
         >
           <a class="nav-link" href="#servicos" @click="menuOpen = false">Serviços</a>
+          <a class="nav-link" href="#penteados" @click="menuOpen = false">Penteados</a>
           <a class="nav-link" href="#atendimento" @click="menuOpen = false">Atendimento</a>
           <a class="nav-link" href="#contato" @click="menuOpen = false">Contato</a>
           <a class="button button-small mt-2 md:mt-0" :href="whatsappUrl" target="_blank" rel="noreferrer">
@@ -355,6 +358,49 @@ function handleTouchEnd(event) {
           <p class="mt-5 text-sm leading-6 text-ink/55">
             Os valores informados não são parcelados no cartão. O sinal de R$ 35,00 é descontado do total do serviço.
           </p>
+        </div>
+      </section>
+
+      <section id="penteados" class="hairstyle-section px-5 py-20 sm:px-8 sm:py-28 lg:px-12">
+        <div class="mx-auto max-w-7xl">
+          <div class="hairstyle-card grid overflow-hidden rounded-3xl bg-white shadow-card reveal md:grid-cols-[0.9fr_1.1fr]">
+            <div class="hairstyle-image-wrap">
+              <img
+                class="hairstyle-image"
+                src="/images/hairstyle.jpg"
+                alt="Penteado semipreso com ondas longas e brilhantes"
+                loading="lazy"
+              />
+            </div>
+            <div class="flex flex-col justify-center p-7 sm:p-10 lg:p-14">
+              <p class="eyebrow mb-5"><span class="eyebrow-line"></span> Penteados</p>
+              <h2 class="section-title">O toque final para a sua produção.</h2>
+              <p class="mt-5 max-w-xl leading-7 text-ink/70">
+                Complete seu visual com um penteado especial para a sua ocasião.
+              </p>
+              <div class="mt-8 flex flex-wrap items-end justify-between gap-5">
+                <div>
+                  <span class="block text-xs uppercase tracking-[0.16em] text-ink/50">Valor do penteado</span>
+                  <span class="font-display text-4xl font-semibold text-plum">R$ 100,00</span>
+                </div>
+                <a
+                  class="button"
+                  :href="hairstyleWhatsappUrl"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Consultar disponibilidade para penteado pelo WhatsApp"
+                >
+                  Consultar disponibilidade
+                  <svg aria-hidden="true" class="h-4 w-4" viewBox="0 0 20 20" fill="none">
+                    <path d="M4.2 10h11.6m-4.7-4.7 4.7 4.7-4.7 4.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </a>
+              </div>
+              <p class="mt-5 text-sm leading-6 text-ink/60">
+                Combine com antecedência, conforme a disponibilidade da penteadista.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
